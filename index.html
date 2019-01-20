@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img src="images/group.jpg" style="position: absolute; left: 0; right: 0;">
+
+        <script>
+        var data = [
+        { bottom: 659, left: 1228, right: 1307, top: 580 },
+        { bottom: 339, left: 316, right: 395, top: 260 },
+        { bottom: 363, left: 916, right: 995, top: 284 },
+        { bottom: 331, left: 220, right: 299, top: 252 },
+        { bottom: 355, left: 1500, right: 1579, top: 276 },
+        { bottom: 683, left: 1468, right: 1547, top: 604 },
+        { bottom: 703, left: 715, right: 810, top: 608 },
+        { bottom: 751, left: 1041, right: 1136, top: 656 },
+        { bottom: 339, left: 508, right: 587, top: 260 },
+        { bottom: 747, left: 500, right: 579, top: 668 },
+        { bottom: 323, left: 1124, right: 1203, top: 244 },
+        { bottom: 331, left: 1292, right: 1371, top: 252 },
+        { bottom: 347, left: 796, right: 875, top: 268 }
+        ];
+
+        data.forEach(function(item) {
+            var div = document.createElement('div');
+            div.setAttribute('style', 'border: 3px solid red; position: absolute; left: ' + item.left + 'px; top: ' + item.top + 'px; width: ' + (item.right-item.left) + 'px; height: ' + (item.bottom - item.top) + 'px;');
+            document.getElementsByTagName('body')[0].appendChild(div);
+        });
+        </script>
+    </body>
+</html>
